@@ -113,7 +113,7 @@ CREATE TABLE `xiaozhi`.`sys_role` (
   `ttsSpeed` FLOAT DEFAULT 1.0 COMMENT '语音语速',
   `temperature` DOUBLE DEFAULT 0.7 COMMENT '温度参数',
   `topP` DOUBLE DEFAULT 1.0 COMMENT 'Top-P参数',
-  `memoryType` enum('long','summary','window') DEFAULT 'window' COMMENT '记忆类型',
+  `memoryType` enum('window') DEFAULT 'window' COMMENT '记忆类型',
   `state` enum('1','0') DEFAULT '1' COMMENT '状态：1-启用，0-禁用',
   `isDefault` enum('1','0') DEFAULT '0' COMMENT '是否默认角色：1-是，0-否',
   `userId` int NOT NULL COMMENT '创建人',

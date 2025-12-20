@@ -136,11 +136,11 @@
                 <when test="sttId == -1">null</when>
                 <otherwise>#{sttId}</otherwise>
             </choose>,
+            #{memoryType},
             #{temperature},
             #{topP},
             #{userId},
-            #{isDefault},
-            #{memoryType}
+            #{isDefault}
         )
     </insert>
 
